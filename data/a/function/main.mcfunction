@@ -6,10 +6,9 @@ scoreboard players reset *
 scoreboard players set @a done 0
 tp @a 0 301 0
 gamemode survival @a
-gamerule doImmediateRespawn true
-gamerule announceAdvancements true
-gamerule spawnRadius 2
-gamerule keepInventory true
+schedule function a:maingmr5 1t
+schedule function a:maingmr7 2t
+schedule function a:maingmr11 3t
 difficulty easy
 time set 0
 team add a

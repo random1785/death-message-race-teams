@@ -203,7 +203,20 @@ execute as @e[type=armor_stand,tag=score,scores={mode=19}] run execute if score 
 execute as @e[type=armor_stand,tag=score,scores={mode=20}] run execute if score 7 score matches 200.. run scoreboard players set @a[scores={team=7}] done 3
 
 execute as @a[scores={done=3},tag=!a] at @s run playsound minecraft:ui.toast.challenge_complete
-execute as @a[scores={done=3},tag=!a] run scoreboard players operation @s scoretick = @e[limit=1,type=armor_stand,tag=score] scoretick
+execute as @a[scores={done=3,team=1},tag=!a] run scoreboard players operation 1 scoretick = @e[limit=1,type=armor_stand,tag=score] scoretick
+execute as @a[scores={done=3,team=2},tag=!a] run scoreboard players operation 2 scoretick = @e[limit=1,type=armor_stand,tag=score] scoretick
+execute as @a[scores={done=3,team=3},tag=!a] run scoreboard players operation 3 scoretick = @e[limit=1,type=armor_stand,tag=score] scoretick
+execute as @a[scores={done=3,team=4},tag=!a] run scoreboard players operation 4 scoretick = @e[limit=1,type=armor_stand,tag=score] scoretick
+execute as @a[scores={done=3,team=5},tag=!a] run scoreboard players operation 5 scoretick = @e[limit=1,type=armor_stand,tag=score] scoretick
+execute as @a[scores={done=3,team=6},tag=!a] run scoreboard players operation 6 scoretick = @e[limit=1,type=armor_stand,tag=score] scoretick
+execute as @a[scores={done=3,team=7},tag=!a] run scoreboard players operation 7 scoretick = @e[limit=1,type=armor_stand,tag=score] scoretick
+execute as @a[scores={done=3,team=1},tag=!a] run scoreboard players set 1 done 3
+execute as @a[scores={done=3,team=2},tag=!a] run scoreboard players set 2 done 3
+execute as @a[scores={done=3,team=3},tag=!a] run scoreboard players set 3 done 3
+execute as @a[scores={done=3,team=4},tag=!a] run scoreboard players set 4 done 3
+execute as @a[scores={done=3,team=5},tag=!a] run scoreboard players set 5 done 3
+execute as @a[scores={done=3,team=6},tag=!a] run scoreboard players set 6 done 3
+execute as @a[scores={done=3,team=7},tag=!a] run scoreboard players set 7 done 3
 execute as @a[scores={done=3},tag=!a,limit=1] run scoreboard players add @e[type=armor_stand,tag=score] place 1
 execute as @a[scores={done=3},tag=!a] run scoreboard players operation @s place = @e[limit=1,type=armor_stand,tag=score] place
 execute as @a[scores={done=3},tag=!a] run function a:zzztimecalc

@@ -11,7 +11,6 @@ execute as @a[tag=t8] run scoreboard players set @s team 0
 tag @e remove newcheck
 tag @e remove final
 tag @e remove whydoesthishappen
-gamerule doImmediateRespawn true
 clear @a
 weather clear
 time set 10000
@@ -20,7 +19,6 @@ scoreboard players reset @a score
 scoreboard players set @a temp 0
 scoreboard players set @a death 17
 scoreboard players set Round rounds 1
-gamerule announceAdvancements true
 kill @e[type=armor_stand]
 summon minecraft:armor_stand 0 330 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["score","newcheck"]}
 team join a @a
@@ -38,9 +36,6 @@ gamemode survival @a
 scoreboard players set @e[type=armor_stand,tag=score,limit=1] two 2
 scoreboard players set @e[type=armor_stand,tag=score,limit=1] ex 1
 
-
-
-gamerule announceAdvancements false
 
 
 # disables team trigger

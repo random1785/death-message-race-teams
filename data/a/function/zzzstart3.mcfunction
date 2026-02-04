@@ -30,6 +30,7 @@ tag @e[type=armor_stand,tag=score] remove k
 effect give @a minecraft:mining_fatigue 11 254 true
 effect give @a resistance 11 254 true
 
-schedule function a:zzzadvdelay 20s
+schedule function a:zzzadvdelay 400t
+schedule function a:zzzadvdelay11 401t
 
 tag @a remove a

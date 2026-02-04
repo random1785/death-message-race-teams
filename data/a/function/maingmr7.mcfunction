@@ -1,0 +1,9 @@
+gamerule doImmediateRespawn true
+gamerule announceAdvancements false
+gamerule spawnRadius 2
+gamerule keepInventory true
+gamerule showDeathMessages true
+gamerule doPatrolSpawning false
+gamerule doTraderSpawning false
+gamerule locatorBar false
+schedule clear a:maingmr11
